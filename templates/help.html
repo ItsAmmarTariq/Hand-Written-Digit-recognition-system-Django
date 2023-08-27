@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help</title>
+
+        <link rel="stylesheet" type="text/css" href="{% static "css/help.css" %}">
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+
+</head>
+<body>
+
+<div class="d-flex justify-content-center">
+
+ <h2 style="align-items: center; margin-left: 550px"> Need Some To Use the system!</h2>
+
+
+</div>
+
+
+<div class="d-flex justify-content-center" style="margin-left: 550px">
+
+
+    <h3>
+        First of All click on draw Digit! <br>
+        <br>
+        Now Draw the digit on canvas using the mouse.<br>
+        <br>
+        After drawing the digit CLick on the predict button.<br>
+        <br>
+        Now System will predict the Digit you have Drawn also it wil show the graph of the Digit.
+    </h3>
+   <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<br>
+    <br>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/vxc9wTlecoo"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+    </iframe>
+
+
+
+</div>
+
+<br>
+<br>
+<div class="container" align="center">
+<form action="/contact/" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Contact Us " class="btn btn-2"  >
+
+</form>
+    <br>
+<form action="/" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Home" class="btn btn-2"  >
+
+</form>
+
+
+
+
+</body>
+</html>

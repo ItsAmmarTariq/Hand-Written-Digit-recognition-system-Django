@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Upload</title>
+</head>
+<body>
+
+    <h1>Upload an Image</h1>
+
+  <!-- form fields go here -->
+<form action="data_processing/" method="post" enctype="multipart/form-data">
+         {% csrf_token %}
+         <label for="my_file">Choose a file:</label>
+         <input type="file" name="my_file" id="my_file">
+         <button type="submit">Predict</button>
+     </form>
+</body>
+</html>

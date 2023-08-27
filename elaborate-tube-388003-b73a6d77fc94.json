@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "elaborate-tube-388003",
+  "private_key_id": "b73a6d77fc94bf4eff7ad78c78f8c0d33ea4d648",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCz83oo3fF75uV9\n4Q17fU5weM46IC+pTW0b/hgARSIxDtSYoq48mQ8iVJ9wpQxBUu+bBMPDeBxe8y7l\nMGUxUJyHB0EdyXnbBZDjyiITDhLFB+AcSUold7cyhi2Qgf9Fic2+SlKnakoSk6BQ\n8L2nwDY+8+2LNkzAUbWqXU3B1eMzf1+9dN0JQ3Hw6VoWGmBPXZSaFR2RjhQFhs5S\n6rSHNmqewQ5GkZUMRhNQgHzJzsWX/OBEkcqIeO4UTJTD/YH3UMUa7KUwC4jszQVW\nmy7Ne9ScxNpLvEXNitRWd5D7doGcg/wJveSuQqv6xQgYItRRudqBWbtslAwZeEkk\nL9nabEZ/AgMBAAECggEABjAbknqVtzqbyAkl7lbDJiYnt6/4c5kjmCoHDg6FvBIg\n4i7JHXEiwbEPQOksBrY6lXLdS6qk4k743Q2ELUuMVmHvFBfwuZHAOog7RVR49Y8g\nkb7WoeGZlxv64FRxpr6Awkf9l59idK96FjTXdx4Q8qrVdeTXUGjlSlQMottSa/VC\nkUAjQByS6A7+44XtITHnZCAv8XArSQz5+h5ZqVm0rxTU5MD5d1cdKDp/bhrqPNbl\nnxu1bDORpsZs8BYoak9fHjngajaqQIAl6V28lSCq0rI5ogWPyFsQdW71SZP1CPtD\nR8psUnpGJOwXMBmS0vBDQ1EnUbeosShL1/ZAPUUSQQKBgQDaiIUIj+rPnn02g9SM\nfdZY1uaItwpJq+tLm+BhXY+LbjmzAO5HcPzoAEIdGcIswf7qvyHtq081eFuf6tYX\nr9lDOSg7GkilDifphE6r3pKO5yCwVQ7lRLK5A2ypZmkDOSh92jTBgLkFdjTJ2MK9\nPrpUQweWCpXIgbdP3BuxX0rtuQKBgQDSzZNCreSa45v4ByN+IW2KI+w7ypk+/Pln\n6xNYvX1KssPK3tNlvnrpxmw26Aka0VG9lgHXa+if5aIy54Y7ybevl9y99D3LJ7W8\n3W0BeM+mkM7WsT972jgSLh85fgKnuKgpxxtBJ+GMb8V8BaxGufOkXxSBNKu/LvOR\nvlgccuSx9wKBgCd6KAYe8X0mFVqGwBvNE66iy6yA3GPooa3b79HG9AptFBFJJsJT\nH+zNNyRIpfIt7V38vyVPIBT5tBuUca5/vtDM/36Fxf/DKeSeWRPlNjaIfDg+dV1n\nZp3Th4qmjGvfpHfvtj4KgeIBs5GPDcbgEQrtvO4W5W3+ON49VedZ3pBJAoGAVfZY\n99b7oyHwB1u54IR3K97sRZGfnm0As5zL/eL/xcdSSldFc3cSnmQ42scSd2omYB5c\nz+EEMrgsxX9eYOEoU6Wk8Z042bBuzv6opfIDE5R3lFshXTsmpFtEhmhZYtXNVYQJ\nHC/MLT2jFakmkIzhywSu0uWMp+DYmHU7bxZ3Jg8CgYEAqS5gi7sm1PlW26wXcfYW\n4B7MyFt3LJpPaNNdpQp7uqJJaZ+8b2hFc66cwEj0GnmdvD1knvigGJO8q35SlE6h\nkQf4Im8bgMpA6imCifuIbUSPD7FZp0h6N500BBXn2QwhZn0b4S5iBitOWryUj/9D\npLPA2J9Hlm4paYtVB6jij2Q=\n-----END PRIVATE KEY-----\n",
+  "client_email": "visionapi-account@elaborate-tube-388003.iam.gserviceaccount.com",
+  "client_id": "104140071606408237721",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/visionapi-account%40elaborate-tube-388003.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static "css/button.css" %}">
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+
+    <style>
+		.typewriter {
+            align-items: center;
+			display: inline-block;
+			white-space: nowrap; /* prevent text from wrapping */
+			overflow: hidden; /* prevent text from overflowing */
+			border-right: .15em solid #ffffff; /* blinking cursor */
+			animation: typing 4s steps(30) infinite;
+            color: #30b22b;
+		}
+
+		@keyframes typing {
+			from { width: 0 }
+			to { width: 100% }
+		}
+	</style>
+
+</head>
+
+<body background="back.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<header>
+    <nav>
+        <ul>
+            <a href="/" class="logo"><h3><i class="fa-solid fa-house"></i>Digit Recognization</h3></a>
+
+
+            <li><a href="draw/"><i class="fa-solid fa-pen-swirl"></i> Draw Digit</a></li>
+            <li><a href="webcam/"><i class="fa-light fa-camera-web"></i> Webcam </a> </li>
+            <li><a href="voice_input/"><i class="fa-solid fa-microphone"></i> <span></span>Voice</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+
+<div class="bg"></div>
+  <div class="jumbotron1">
+      <h1><span class="typewriter">Welcome to Digit Recognition System ....!!</span></h1>
+     </div>
+<br>
+
+  <div class="content">
+    <p>
+    Welcome to Scanned Digit Recognizer, your one-stop solution for accurate and efficient digit recognition. <br>
+      Our website utilizes state-of-the-art technology and a powerful CNN model to recognize and process<br>
+      scanned digits with incredible accuracy.<a href="#" onclick="toggleExtraText(); return false;">Read More</a></p>
+
+
+      <div id="extra-text" style="display:none; color: white;">
+     We understand the importance of digit recognition in today's world, and our website provides an easy-to-use<br>
+          platform for users to quickly and easily recognize digits from a variety of sources. <br>
+          Whether you need to scan digits from printed material, handwriting, or even audio files, our website can recognize them all.<br> Our website is equipped with a Webcam module, allowing you to shoe the digit on the paper and it instantly recognize them. The canvas module enables you to draw digits on the screen with a mouse or stylus and have them recognized immediately. Additionally, we have an audio module that allows you to recognize spoken digits with ease.<br>
+    We take pride in our technology, and our CNN model has been trained with thousands of samples to ensure accurate and reliable recognition of digits.<br>Our team of experts is constantly updating and refining our technology to provide the best possible service to our users.<br>
+     </div>
+
+
+<style>
+  #extra-text {
+    /* Your CSS styles for the hidden text go here */
+  }
+</style>
+    <br>
+      <br>
+      <br>
+    <h2 align="center">CLICK ON ANY BUTTON TO PREDICT THE DIGIT</h2>
+
+    <div  class="container" align="center">
+        <form action="/draw/" method="POST">
+            {% csrf_token %}
+            <input style="color: white;" type="submit" value="Canvas MultiDigit"  class="btn btn-2"  >
+        </form>
+
+        <form action="/webcam/" method="POST">
+            {% csrf_token %}
+            <input style="color: white;"  type="submit" value="Webcam" class="btn btn-2" >
+         </form>
+         <form action="/upload/" method="POST">
+            {% csrf_token %}
+            <input style="color: white;"  type="submit" value="Upload Digit Voice" class="btn btn-2" >
+         </form>
+        <form action="image_input/" method="POST">
+            {% csrf_token %}
+            <input style="color: white;"  type="submit" value="Multi Digit Capture" class="btn btn-2" >
+         </form>
+        <form action="finger_webcam/" method="POST">
+            {% csrf_token %}
+            <input style="color: white;"  type="submit" value="Finger Counting " class="btn btn-2" >
+         </form>
+</div>
+ </div>
+
+ <div class="content">
+
+ </div>
+</body>
+
+<script>
+  function toggleExtraText() {
+    var extraText = document.getElementById("extra-text");
+    if (extraText.style.display === "none") {
+      extraText.style.display = "block";
+    } else {
+      extraText.style.display = "none";
+    }
+  }
+</script>
+
+</html>

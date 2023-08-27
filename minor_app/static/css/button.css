@@ -1,0 +1,124 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: repeating-radial-gradient(#193549, #0f1d33);
+  margin: 0;
+}
+
+
+header {
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 10%;
+  background-color: transparent;
+}
+
+.content{
+
+  margin-top: 20px;
+  margin-bottom: 7%;
+  color: white;
+  padding: 1%;
+  font-size: large;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 900;
+}
+
+nav ul {
+  font-size: large;
+  margin-left: 50px;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+nav ul li {
+  text-transform: none;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 1px;
+}
+
+nav ul li a:hover {
+  color: #DC7633;
+}
+
+nav ul h3 {
+  text-decoration: none;
+color: #24C936;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 1px;
+}
+
+.cta {
+  background-color: #DC7633;
+  color: #FFF;
+}
+
+.cta:hover {
+  background-color: #D35400;
+  color: #FFF;
+}
+
+.jumbotron1 {
+  margin-left: 250px;
+  width: 1000px;
+  height: 20px;
+}
+
+.jumbotron1 h1 {
+  margin-top: 5rem;
+  color: white;
+  font-size: 48px;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+
+
+.btn {
+  font-size: 120%;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 5px #eee;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: white;
+}
+
+
+.btn-2 {
+  background-image: linear-gradient(to right, #76a9c6, #064e7d, #472ca2);
+  width: 23em;
+  height: 7em;
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+}
+
+.content p{
+
+  margin-left: 230px;
+}
+
+#extra-text {
+  margin-left: 230px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .container {
+            margin-top: 10px;
+            width: 600px;
+
+            border-image: linear-gradient(to right, #44b5d9, #7b73de);
+            border-image-slice: 1;
+            border-radius: 10px;
+            padding: 20px;
+            margin-left: 60px;
+        }
+
+        .btn-custom {
+            background-image: linear-gradient(to right, #76a9c6, #064e7d, #472ca2);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+
+        .btn-custom:hover {
+            background-color: #7393c4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br>
+
+        <h1 style="color: ">Predicted result is</h1>
+        <textarea rows="10" cols="50">{{ result_text }}</textarea>
+
+        <form method="post" action="/">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-custom">Home</button>
+        </form>
+    </div>
+</body>
+</html>

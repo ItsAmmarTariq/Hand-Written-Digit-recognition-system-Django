@@ -1,0 +1,39 @@
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: repeating-radial-gradient(#193549, #3261a8);
+  margin: 0;
+  padding: 0%;
+}
+.btn {
+ 
+  margin-left: 45%;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+/* Demo Stuff End -> */
+
+/* <- Magic Stuff Start */
+
+.btn:hover {
+  background-position: right center; /* change the direction of the change here */
+   width: 10em;  height: 3em;
+}
+
+
+.btn-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    width: 10em;  height: 3em;
+  font-size: 100px;
+
+
+}
